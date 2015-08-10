@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'keyStoreArlefreak'
+            keyPassword '853bfac8'
+            storeFile file('/Users/arlefreak/Dropbox/Android/Keys/keyStore.jks')
+            storePassword '853bfac8'
+        }
+    }
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
-
     defaultConfig {
         applicationId "com.arlefreak.archillectmuzei"
         minSdkVersion 15
@@ -15,6 +22,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }

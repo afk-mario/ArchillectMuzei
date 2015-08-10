@@ -3,4 +3,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="source_name">Archillect</string>
     <string name="source_description">Archillect bot images</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
